@@ -19,7 +19,7 @@ namespace xbeastmode\antispammer;
                 $e->setCancelled();
             }
             else{
-                $this->players[spl_object_hash($p)] = time();
+                $this->players[spl_object_hash($e)] = time();
             }
         }
     }
